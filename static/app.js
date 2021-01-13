@@ -1,5 +1,4 @@
 async function main(){
-
   //recuperer IP
   const ip = await fetch("https://api.ipify.org?format=json")
   .then(resultat => resultat.json())
@@ -16,7 +15,6 @@ async function main(){
   .then(resultat => resultat.json())
   .then(json => json)
 
-  console.log(meteo);
 
   displayWeatherInfos(meteo);
 
@@ -49,6 +47,5 @@ document.querySelector("#weather-description").textContent = capitalize(descript
 
 document.querySelector("i.wi").className = icons[conditions];
 }
-
 
 main();
