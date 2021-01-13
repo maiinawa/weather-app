@@ -11,7 +11,7 @@ async function main(){
   .then(json => json.city)
   
     //recuperer meteo de la ville
-      const meteo = await fetch("http://api.openweathermap.org/data/2.5/weather?&lang=fr&units=metric&appid=f0cd26ef432d833785e4455713d29d81&q=" + ville)
+      const meteo = await fetch("https://api.openweathermap.org/data/2.5/weather?&lang=fr&units=metric&appid=f0cd26ef432d833785e4455713d29d81&q=" + ville)
   .then(resultat => resultat.json())
   .then(json => json)
 
