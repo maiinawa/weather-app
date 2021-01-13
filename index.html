@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <script type="text/javascript" src="/static/app.js"></script>
+
     <meta charset= "utf-8" />
     <meta name="viewport" content="width=375, maximum-scale=1">
-    <link rel="stylesheet" href="./style/style.css">
-    <script src="https://kit.fontawesome.com/79d9690799.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/style/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css'/>
+
+    <title>Quel temps fait-il?</title>
 
 </head>
 <body>
-    <header></header>
-    <main>
-        <input type="search" class="input-cityname" placeholder="enter a city name">
+    <section id="app">
+
+        <!--display ip city and search tool-->
         
-        <div class=today>
-            <p class="today-day ">Mardi</p>
-            <p class="today-hour nbr-strong">17:00 </p>
-        </div>
+        <h1>
+            <span id="city"></span>
+            <span id="tooltip">Type an other city<br></span>
+        </h1>
+        <!--pictogram condition-->
+        <i class="wi"></i>
 
-        <div class="pictogramme"><i class="fas fa-cloud fa-10x"></i></div>
+        <!--condition details-->
+        <h2><span id="temperature"></span> °c</h2>
 
-        <div class="weather-display">
-            <div class="weather-temperature">
-                <p class="weather-temperature-nbr nbr-strong">20°</p>
-                <p class="degres font-light">c</p>
-            </div>
-            <div class=line></div>
-            <div class="weather-and-location">
-                <p class="weather font-strong">Nuageux</p>
-                <p class="weather-location font-light">Bordeaux, France</p>
-            </div>
-        </div> 
+        <p id="weather-description"></p>
     
     </main>
     <footer></footer>
