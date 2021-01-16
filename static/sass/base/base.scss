@@ -1,26 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-p {
-    margin: 0;
-    font-size: 9vw;
-    font-weight: 500;
+.rain{
+background: linear-gradient(40deg, rgba(214,226,231,1) 0%, rgba(180,219,227,1) 52%, rgba(208,223,221,1) 100%);
 }
 
-body {
-    background-color: rebeccapurple;
-    padding: 100px 0;
-    margin: 0;
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    text-align: center;
+.clear{
+    background: linear-gradient(42deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
 }
 
-main {
-    padding: 150px 0px;
-
+.clouds{
+    background: linear-gradient(40deg, rgba(191,199,197,1) 0%, rgba(152,167,170,1) 52%, rgba(208,223,221,1) 100%);
 }
 
-.nbr-strong {
-    font-weight: 500;
-    font-size: 14vw;
+.snow{
+    background: linear-gradient(40deg, rgba(233,255,250,1) 0%, rgba(207,249,255,1) 52%, rgba(230,251,248,1) 100%);
+}
+
+.fog{
+    background: linear-gradient(40deg, rgba(191,199,197,1) 0%, rgba(205,226,230,1) 52%, rgba(248,255,254,1) 100%);
+}
+
+.drizzle{
+    background: linear-gradient(40deg, rgba(214,226,231,1) 0%, rgba(254,239,255,1) 52%, rgba(208,223,221,1) 100%);
 }

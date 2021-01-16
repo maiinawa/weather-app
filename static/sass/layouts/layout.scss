@@ -1,43 +1,75 @@
 body {
-    background-color: black;
-    padding: 100px 0;
+    background: black;
+    background-position: center;
+    background-size: cover;
+  
+    padding: 150px 0;
     margin: 0;
+    height: 100vh;
+
     font-family: 'Rubik', sans-serif;
     color: white;
     text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
-main {
-    padding: 150px 0px;
-
+#app{
+    padding: 50px;
 }
 
-p {
+p, h1, h2 {
     margin: 0;
     font-size: 9vw;
     font-weight: 500;
 }
 
-.nbr-strong {
-    font-weight: 500;
-    font-size: 14vw;
+@media screen and (min-width:500px){
+    p, h1, h2 {
+        margin: 0;
+        font-size: 7vw;
+        font-weight: 500;
+    } 
+}
+
+@media screen and (min-width:800px){
+    p, h1, h2 {
+        margin: 0;
+        font-size: 5vw;
+        font-weight: 500;
+    } 
+}
+
+@media screen and (min-width:1000px){
+    p, h1, h2 {
+        margin: 0;
+        font-size: 60px;
+        font-weight: 500;
+    } 
 }
 
 .wi {
-    font-size: 40vw;
-    margin: 100px 0;
+    font-size: 30vw;
+    margin: 50px 0;
+}
+
+@media screen and (min-width: 500px) {
+    .wi {
+        font-size: 20vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .wi {
+        font-size: 15vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wi {
+        font-size: 150px;
+    }
 }
 
 #tooltip{
     display: none;
 }
-
-/*.background-gradient-rain
-.background-gradient-cloudy
-.background-gradient-sunny
-.background-gradient-snow
-.background-gradient-fog
-.background-gradient-sleet*/
-
-
-
