@@ -4,13 +4,13 @@ async function main(){
   .then(resultat => resultat.json())
   .then(json => json.ip)
 
-    //récuperer ville de IP
+    //récuperer ville de IP func-1
 
   const ville = await fetch("https://freegeoip.app/json/" + ip)
   .then(resultat => resultat.json())
   .then(json => json.city)
   
-    //recuperer meteo de la ville
+    //recuperer meteo de la ville func-1
       const meteo = await fetch("https://api.openweathermap.org/data/2.5/weather?&lang=fr&units=metric&appid=f0cd26ef432d833785e4455713d29d81&q=" + ville)
   .then(resultat => resultat.json())
   .then(json => json)
@@ -21,6 +21,7 @@ async function main(){
   displayWeatherInfos(meteo);
 
 }
+//mettre les mots en 1ere majuscule
 
 function capitalize(str){
   return str[0].toUpperCase() + str.slice(1);
@@ -37,7 +38,7 @@ const icons = {
 
 
 
-  //utilisation des données récoltées pour mettre à jour la page
+  //attribution des données récoltées pour mettre à jour la page
 function displayWeatherInfos(data){
 
 const name = data.name;
@@ -45,7 +46,7 @@ const temperature = data.main.temp;
 const conditions = data.weather[0].main;
 const description = data.weather[0].description;
 
-//attribue les données dans contenu du site
+//utilisation des données dans contenu du site
 
 document.querySelector("#city").textContent = name;
 document.querySelector("#temperature").textContent = Math.round(temperature);

@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .rain {
-  background: linear-gradient(40deg, #d6e2e7 0%, #b4dbe3 52%, #d0dfdd 100%);
+  background: grey;
 }
 
 .clear {
-  background: linear-gradient(42deg, #833ab4 0%, #fd1d1d 0%, #fcb045 100%);
+  background: #35bbbb;
 }
 
 .clouds {
-  background: linear-gradient(40deg, #bfc7c5 0%, #98a7aa 52%, #d0dfdd 100%);
+  background: lightgray;
 }
 
 .snow {
-  background: linear-gradient(40deg, #e9fffa 0%, #cff9ff 52%, #e6fbf8 100%);
+  background: #7e7c7c;
 }
 
 .fog {
-  background: linear-gradient(40deg, #bfc7c5 0%, #cde2e6 52%, #f8fffe 100%);
+  background: #747474;
 }
 
 .drizzle {
-  background: linear-gradient(40deg, #d6e2e7 0%, #feefff 52%, #d0dfdd 100%);
+  background: #578383;
 }
 
 body {
@@ -29,8 +29,6 @@ body {
   background-size: cover;
   padding: 150px 0;
   margin: 0;
-  height: 60vh;
-  /*pour mettre en pleine page le background*/
   font-family: "Rubik", sans-serif;
   color: white;
   text-align: center;
@@ -41,28 +39,36 @@ body {
   padding: 50px;
 }
 
-p, h1, h2 {
+p,
+h1,
+h2 {
   margin: 0;
   font-size: 9vw;
   font-weight: 500;
 }
 
 @media screen and (min-width: 500px) {
-  p, h1, h2 {
+  p,
+h1,
+h2 {
     margin: 0;
     font-size: 7vw;
     font-weight: 500;
   }
 }
 @media screen and (min-width: 800px) {
-  p, h1, h2 {
+  p,
+h1,
+h2 {
     margin: 0;
     font-size: 5vw;
     font-weight: 500;
   }
 }
 @media screen and (min-width: 1000px) {
-  p, h1, h2 {
+  p,
+h1,
+h2 {
     margin: 0;
     font-size: 60px;
     font-weight: 500;
